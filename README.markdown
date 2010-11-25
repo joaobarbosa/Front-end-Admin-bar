@@ -8,7 +8,7 @@ This is a XSLT utility for Symphony CMS that adds a simple admin bar in the top 
 
 ## Info
 - Version:	0.1
-- Date:		24-119-2010
+- Date:		24-11-2010
 - Author:	João Barbosa
 - E-mail:	<joao.ofb@gmail.com>
 - Website:	<http://www.joaootavio.com.br>
