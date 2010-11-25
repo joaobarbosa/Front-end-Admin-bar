@@ -11,7 +11,7 @@ This is a XSLT utility for Symphony CMS that adds a simple admin bar in the top 
 - Date:		24-119-2010
 - Author:	João Barbosa
 - E-mail:	<joao.ofb@gmail.com>
-- Website:	<www.joaootavio.com.br>
+- Website:	<http://www.joaootavio.com.br>
 
 ---------------------------------------
 
@@ -29,7 +29,7 @@ On your <code>master.xsl</code> (or an specific page you want to use it), import
 
 <code><xsl:import href="../utilities/admin-bar.xsl"/></code>
 
-... and call the template right after your <code><body></body> tag:
+... and call the template right after your <code><body></code> tag:
 
 <code>
 	<xsl:call-template name="front-admin-bar">
