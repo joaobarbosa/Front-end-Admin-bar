@@ -32,10 +32,10 @@ On your <code>master.xsl</code> (or an specific page you want to use it), import
 ... and call the template right after your <code>body</code> tag:
 
 <code>
-<xsl:call-template name="front-admin-bar">  
-	<xsl:with-param name="logged-label" select="Logged in as: " />
-	<xsl:with-param name="logged-label" select="Back to admin" />
-	<xsl:with-param name="logged-label" select="Logout" />
+<xsl:call-template name="front-admin-bar">   
+    <xsl:with-param name="logged-label" select="Logged in as: " />
+    <xsl:with-param name="logged-label" select="Back to admin" />
+    <xsl:with-param name="logged-label" select="Logout" />
 </xsl:call-template>
 </code>
 
