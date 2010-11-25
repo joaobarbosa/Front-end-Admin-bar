@@ -29,7 +29,7 @@ On your <code>master.xsl</code> (or an specific page you want to use it), import
 
 <code><xsl:import href="../utilities/admin-bar.xsl"/></code>
 
-... and call the template right after your <code><body></code> tag:
+... and call the template right after your <code>body</code> tag:
 
 <code>
 	<xsl:call-template name="front-admin-bar">
