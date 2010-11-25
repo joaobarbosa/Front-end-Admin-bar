@@ -24,6 +24,8 @@
 		</xsl:call-template>
 -->
 
+	<xsl:param name="cookie-username" />
+
 	<xsl:template name="front-admin-bar">
 
 		<xsl:param name="logged-label" select="'Logged-in as: '" />
