@@ -7,7 +7,7 @@ This is a XSLT utility for Symphony CMS that adds a simple admin bar in the top 
 ---------------------------------------
 
 ## Info
-- Version:	0.1
+- Version:	0.3
 - Date:		24-11-2010
 - Author:	João Barbosa
 - E-mail:	<joao.ofb@gmail.com>
@@ -32,6 +32,7 @@ On your <code>master.xsl</code> (or an specific page you want to use it), import
 ... and call the template right after your <code>body</code> tag:
 
 	<xsl:call-template name="front-admin-bar">
+		<xsl:with-param name="dev-username" select="'developer-username'" />
 		<xsl:with-param name="logged-label" select="'Logged in as: '" />
 		<xsl:with-param name="logged-label" select="'Back to admin'" />
 		<xsl:with-param name="logged-label" select="'Logout'" />
@@ -40,14 +41,34 @@ On your <code>master.xsl</code> (or an specific page you want to use it), import
 
 ---------------------------------------
 
-## Parameters
+## Required Parameters
+
+- **dev-username**: developer's username
+*Required for identifying which sidebar options that will be displayed*
+
+---------------------------------------
+
+## Optional Parameters
 
 - **logged-label**: text that precedes username link  
-*Optional. Default Value: 'Logged in as: '*
+*Default Value: 'Logged in as: '*
 - **admin-link**: text for the administration link  
-*Optional. Default Value: 'Back to admin'*
+*Default Value: 'Back to admin'*
 - **logout-link**: text for the logout link  
-*Optional. Default Value: 'Logout'*
+*Default Value: 'Logout'*
 - **debug-link**: text for the actual page debug link  
-*Optional. Default Value: 'Debug this page'*
+*Default Value: 'Debug this page'*
 
+---------------------------------------
+
+## Changelog
+
+### 0.3
+- Developers and authors has different sidebars
+
+### 0.2
+- Blank page when logged out bug fixed
+- Debug link added
+
+### 0.1
+- First Release
