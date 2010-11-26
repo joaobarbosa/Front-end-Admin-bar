@@ -31,6 +31,7 @@
 		<xsl:param name="logged-label" select="'Logged-in as: '" />
 		<xsl:param name="admin-link" select="'Back to admin'" />
 		<xsl:param name="logout-link" select="'Logout'" />
+		<xsl:param name="debug-link" select="'Debug this page'" />
 
 		<xsl:if test="string-length($cookie-username) > 0">
 			<div class="adminBar">
@@ -39,6 +40,10 @@
 					<xsl:value-of select="$logged-label" />
 					<a href="{$root}/symphony/system/authors">
 						<xsl:value-of select="$cookie-username" />
+					</a>
+					<xsl:text>&#160;|&#160;</xsl:text>
+					<a href="{$current-url}?debug">
+						<xsl:value-of select="$debug-link" />
 					</a>
 					<xsl:text>&#160;|&#160;</xsl:text>
 					<a href="{$root}/symphony">

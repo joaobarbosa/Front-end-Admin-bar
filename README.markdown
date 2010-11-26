@@ -35,6 +35,7 @@ On your <code>master.xsl</code> (or an specific page you want to use it), import
 		<xsl:with-param name="logged-label" select="'Logged in as: '" />
 		<xsl:with-param name="logged-label" select="'Back to admin'" />
 		<xsl:with-param name="logged-label" select="'Logout'" />
+		<xsl:with-param name="debug-link" select="'Debug this page'" />
 	</xsl:call-template>
 
 ---------------------------------------
@@ -47,4 +48,6 @@ On your <code>master.xsl</code> (or an specific page you want to use it), import
 *Optional. Default Value: 'Back to admin'*
 - **logout-link**: text for the logout link  
 *Optional. Default Value: 'Logout'*
+- **debug-link**: text for the actual page debug link  
+*Optional. Default Value: 'Debug this page'*
 
