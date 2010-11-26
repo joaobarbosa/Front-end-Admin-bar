@@ -21,8 +21,9 @@
 		<xsl:call-template name="front-admin-bar">
 			<xsl:with-param name="dev-username" select="'developer-username'" />
 			<xsl:with-param name="logged-label" select="'Logged in as: '" />
-			<xsl:with-param name="logged-label" select="'Back to admin'" />
-			<xsl:with-param name="logged-label" select="'Logout'" />
+			<xsl:with-param name="admin-link-label" select="'Back to admin'" />
+			<xsl:with-param name="logout-link-label" select="'Logout'" />
+			<xsl:with-param name="debug-link-label" select="'Debug this page'" />
 		</xsl:call-template>
 -->
 
