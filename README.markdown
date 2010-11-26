@@ -43,7 +43,7 @@ On your <code>master.xsl</code> (or an specific page you want to use it), import
 
 ## Required Parameters
 
-- **dev-username**: developer's username
+- **dev-username**: developer's username  
 *Required for identifying which sidebar options that will be displayed*
 
 ---------------------------------------

@@ -5,19 +5,21 @@
 	Front-end Admin bar
 
 	Info
-		Version:	0.1
-		Date:		24-119-2010
+		Version:	0.3
+		Date:		24-11-2010
 		Author:		João Barbosa
 		E-mail:		joao.ofb@gmail.com
 		Website:	www.joaootavio.com.br
 
 	Parameters
+		dev-username: developer's username
 		logged-label: text that precedes username link
 		admin-link: text for the administration link
 		logout-link: text for the logout link
 
 	Usage
 		<xsl:call-template name="front-admin-bar">
+			<xsl:with-param name="dev-username" select="'developer-username'" />
 			<xsl:with-param name="logged-label" select="'Logged in as: '" />
 			<xsl:with-param name="logged-label" select="'Back to admin'" />
 			<xsl:with-param name="logged-label" select="'Logout'" />
